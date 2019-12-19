@@ -1,0 +1,20 @@
+server side:
+
+const io = require('socket.io')();
+
+// io middleware
+io.use(()=>{})
+
+// io connection start 
+io.on('connection', (socket)=>{
+	let token = socket.handshake.query.token;
+
+})
+
+
+
+client side:
+
+import io from 'socket.io-client'
+
+const socket = io('http://localhost:3000?token=abc'); //using with JWT
