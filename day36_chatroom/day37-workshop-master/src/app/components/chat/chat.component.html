@@ -1,0 +1,34 @@
+<mat-toolbar>{{groupName}} - {{username}}</mat-toolbar>
+<div class="page">
+<div class="page-content">
+        <br>
+        <perfect-scrollbar #chatPS style="position: relative;max-width: 100%;" [style.max-height]="maxHeight" [config]="config" [scrollIndicators]="true" (psXReachEnd)="onScrollEvent($event)" (psYReachEnd)="onScrollEvent($event)" (psXReachStart)="onScrollEvent($event)" (psYReachStart)="onScrollEvent($event)">
+            <div class="scrollable-content">
+                <div *ngFor="let chat of chats" >
+                        <div *ngIf="username === chat.username" class="bubble">
+                             {{chat.username}} : {{chat.data}}
+                        </div>
+                        <div *ngIf="username !== chat.username" class="bubble bubble--alt">
+                            {{chat.username}} : {{chat.data}}
+                        </div>
+                </div>    
+            </div>
+        </perfect-scrollbar>
+</div> 
+<div class="page-footer">
+    <mat-toolbar>
+        <mat-toolbar-row>
+                <form class="example-fill-remaining-space" [formGroup]="chatForm">
+                    <mat-form-field>
+                        <input matInput formControlName="message" required>
+                    </mat-form-field>
+                    <button mat-icon-button aria-label="chat icon" (click)="sendMessage()">
+                    <mat-icon>message</mat-icon>
+                    </button>
+                </form>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    
+</div>  
+</div>
+      

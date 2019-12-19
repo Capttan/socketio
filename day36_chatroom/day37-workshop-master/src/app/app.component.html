@@ -1,0 +1,12 @@
+<div fxLayout="column" fxFlexFill >
+  <mat-toolbar color="primary">
+      <mat-icon [routerLink]="['']">home</mat-icon>
+      <span> &nbsp; </span> 
+      <span noWrap=false> Chat App </span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button (click)="leaveChat()">
+          <mat-icon aria-label="Logout icon">power_settings_new</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>

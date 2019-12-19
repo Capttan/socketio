@@ -1,0 +1,176 @@
+.site-menu {
+    order: 1;
+    flex-shrink: 0;
+    flex-basis: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+.content {
+    order: 2;
+    overflow-y: scroll;
+    width: 100%;
+    flex: 8;
+}
+
+.footer {
+    order: 3;
+    flex-shrink: 0;
+    flex-basis: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+.page {
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-header {
+  flex-shrink: 0;
+}
+
+.page-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.page-footer {
+  position:fixed;
+  width:100%;
+  bottom:0;
+}
+
+.chat-message-full-width {
+  width: 100%;
+}
+
+.right-align-grid {
+  position: absolute;
+  right: 29px;
+}
+
+.end-align-grid {
+  position: absolute;
+  right: 5px;
+}
+
+.example2-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+  Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+  Every toolbar row uses a flexbox row layout. */
+  flex: 1 100%;
+}
+
+
+.mat-form-field.mat-form-field {
+  width: 90%;
+}
+
+.mat-form-field-infix {
+  width: 600px !important;
+}
+
+.example-margin {
+ margin: 0 10px;
+}
+/* .bubble */
+
+.bubble {
+	background-image: linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -o-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(210,244,254)),
+	color-stop(1, rgb(149,194,253))
+);
+	border: solid 1px rgba(0, 0, 0, 0.5);
+	/* vendor rules */
+	border-radius: 20px;
+	/* vendor rules */
+	box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+	/* vendor rules */
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	margin-bottom: 20px;
+	padding: 10px 30px;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+	width: auto;
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+.bubble:before, .bubble:after {
+	border-radius: 20px / 10px;
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.bubble:before {
+	border: 10px solid transparent;
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: -7px;
+	z-index: -2;
+}
+
+.bubble:after {
+	border: 8px solid transparent;
+	border-bottom-color: #d2f4fe;
+	bottom: 1px;
+	left: -5px;
+}
+
+.bubble--alt {
+	background-image: linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -o-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(172,228,75)),
+	color-stop(1, rgb(122,205,71))
+);
+	float: right;
+}
+
+.bubble--alt:before {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px / 10px;
+	left: auto;
+	right: -7px;
+}
+
+.bubble--alt:after {
+	border-bottom-color: #ace44b;
+	border-radius: 20px / 10px;
+	left: auto;
+	right: -5px;
+}
+
+
+.full-width {
+  width: 100%;
+}
+
+.full-width .mat-icon {
+  cursor: pointer;
+}
